@@ -76,7 +76,7 @@ function App() {
     },[todos])
   return (
     <>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="d-flex flex-column min-vh-100">
       <Header title="My Todos List" searchBar={false}/>
       <div className="flex-grow-1">
